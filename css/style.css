@@ -1,0 +1,60 @@
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    border: 5px solid #0706065d;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    width: 70%;
+    position: relative;
+}
+
+.inner-element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], textarea, input[type="file"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+
+textarea {
+    height: 80px;
+}
+
+.new-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.close-button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 2.7rem;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: red;
+}
