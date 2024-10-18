@@ -1,3 +1,4 @@
+/* Estilos globais */
 body {
   background-color: #F5EF52;
   font-family: Arial, sans-serif;
@@ -11,13 +12,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
   background-color: rgba(70, 67, 67, 0.4);
   z-index: -1;
 }
 
 .container-principal {
-  margin-left: 100px;
+  margin-left: 10px;
   width: calc(100% - 200px);
   min-height: 100vh;
   background-color: white;
@@ -31,7 +31,6 @@ body {
   background-color: #fff;
   padding-top: 1rem;
   border-right: 2px solid #ccc;
-  margin-right: 5rem;
 }
 
 .center ul {
@@ -59,10 +58,11 @@ body {
   border-color: #ccc;
 }
 
-.bi-person-circle{
+.bi-person-circle {
   font-size: 4rem;
 }
-.bi-search, .bi-chat-left, .bi-gear, .bi-bell-fill, .bi-plus-square-dotted{
+
+.bi-search, .bi-chat-left, .bi-gear, .bi-bell-fill, .bi-plus-square-dotted {
   font-size: 2rem;
 }
 
@@ -193,7 +193,7 @@ body {
   margin: 1rem 0;
 }
 
-/* ########## Flashcards ########## */
+/* ########## Postagens ########## */
 .container {
   width: 70%;
   margin: 1rem auto;
@@ -235,4 +235,136 @@ body {
   width: 100%;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+/* ########## Media Queries ########## */
+
+/* Telas grandes - até 1200px */
+@media screen and (max-width: 1200px) {
+  .container-principal {
+    width: calc(107% - 100px);
+  }
+
+  .escrever_post textarea {
+    width: 75%;
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
+
+  .botoes {
+    width: 60%;
+    margin-left: 12.5rem;
+  }
+
+  .post-container,
+  .new-container {
+    width: 72%;
+    margin-left: 8.5rem;
+  }
+}
+
+/* Tablets e telas intermediárias - até 768px */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 5rem;
+    margin-right: 7rem;
+  }
+
+  .container-principal {
+    width: calc(112.5% - 5rem);
+    margin-left: 0;
+  }
+
+  .escrever_post textarea {
+    width: 70%;
+    margin-left: 7rem;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .botoes {
+    width: 80%;
+    position: relative;
+    margin-right: 7rem;
+  }
+
+  .botoes #addElementButton {
+    margin-right: 10px;
+  }
+
+  .post-container,
+  .new-container {
+    width: 75%;
+    margin-left: 5.5rem;
+    padding: 1rem;
+  }
+
+  .post-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .post-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .post-content p {
+    font-size: 1.4rem;
+  }
+
+  .post-actions a i {
+    font-size: 2rem;
+  }
+}
+
+/* Celulares - até 600px */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 5rem;
+    margin-right: 7rem;
+  }
+
+  .container-principal {
+    width: calc(120% - 5rem);
+  }
+
+  .escrever_post textarea {
+    width: 100%;
+    margin-left: 5rem;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .botoes {
+    position: relative;
+    margin-right: 6rem;
+  }
+
+  .botoes #remove {
+    margin-left: 3.5rem;
+  }
+
+  .post-container,
+  .new-container {
+    width: 65%;
+    margin-left: 6.5rem;
+    padding: 1rem;
+  }
+
+  .post-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .post-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .post-content p {
+    font-size: 1.4rem;
+  }
+
+  .post-actions a i {
+    font-size: 2rem;
+  }
 }

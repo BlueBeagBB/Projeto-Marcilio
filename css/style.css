@@ -1,4 +1,4 @@
-
+/* Estilo padrão para telas grandes */
 button {
     padding: 10px;
     font-size: 16px;
@@ -57,4 +57,83 @@ textarea {
 
 .close-button:hover {
     color: red;
+}
+
+/* ########## Media Queries ########## */
+
+/* Telas grandes - até 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%; /* Aumenta a largura relativa para telas menores */
+        padding: 10px;
+    }
+    
+    .inner-element {
+        gap: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Tablets e telas intermediárias - até 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%; /* Preenche a largura total */
+        padding: 8px;
+    }
+
+    input[type="text"], textarea, input[type="file"] {
+        width: 100%; /* Faz os inputs ocuparem 100% da largura disponível */
+    }
+
+    button {
+        font-size: 13px;
+        padding: 7px;
+        margin: 8px;
+    }
+
+    textarea {
+        height: 70px;
+    }
+
+    .post-image {
+        margin-top: 8px;
+    }
+
+    .close-button {
+        font-size: 2.2rem; /* Ajusta o tamanho do botão de fechar */
+    }
+}
+
+/* Celulares - até 600px */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    input[type="text"], textarea, input[type="file"] {
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    textarea {
+        height: 60px; /* Reduz a altura do textarea */
+    }
+
+    button {
+        font-size: 12px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .post-image {
+        margin-top: 5px;
+    }
+
+    .close-button {
+        font-size: 2rem;
+    }
 }
