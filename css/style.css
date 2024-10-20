@@ -81,7 +81,7 @@ textarea {
 /* Tablets e telas intermediárias - até 768px */
 @media screen and (max-width: 768px) {
     .container {
-        width: 100%; /* Preenche a largura total */
+        width: 90%; /* Preenche a largura total */
         padding: 8px;
     }
 
@@ -111,7 +111,7 @@ textarea {
 /* Celulares - até 600px */
 @media screen and (max-width: 600px) {
     .container {
-        width: 100%;
+        width: 85%;
         padding: 5px;
     }
 

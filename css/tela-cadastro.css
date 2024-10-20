@@ -7,12 +7,12 @@ body {
     background-repeat: no-repeat;
 }
 
-.tela-esquerda>h1 {
+.leftScreen>h1 {
     line-height: 3rem;
     color: white;
 }
 
-.tela-principal {
+.main {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,7 +21,7 @@ body {
     flex-direction: row;
 }
 
-.tela-esquerda img {
+.leftScreen img {
     max-width: 300px;
     max-height: 300px;
     display: flex;
@@ -30,13 +30,13 @@ body {
     height: auto;
 }
 
-.tela-esquerda {
+.leftScreen {
     display: flex;
     align-items: center;
     margin-right: 5rem;
 }
 
-.tela-direita {
+.rightScreen {
     width: 30vw;
     height: 100vh;
     display: flex;
@@ -44,7 +44,7 @@ body {
     align-items: center;
 }
 
-.card-login {
+.cardLogin {
     width: 100%;
     height: auto;
     display: flex;
@@ -72,13 +72,13 @@ body {
     height: 40.5rem;
 }
 
-.card-login>h1 {
+.cardLogin>h1 {
     color: #fff700;
     font-weight: 800;
     margin: 0;
 }
 
-.card-login>button {
+.cardLogin>button {
     margin-top: 2%;
 }
 
@@ -105,7 +105,7 @@ body {
     margin-top: 8px;
 }
 
-.tela-principal button {
+.main button {
     border: none;
     width: 100%;
     border-radius: 10px;
@@ -116,13 +116,13 @@ body {
     padding: 1.1rem;
 }
 
-.tela-principal p {
+.main p {
     margin-top: 1rem;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
-.tela-principal p a {
+.main p a {
     text-decoration: none;
     color: #4b4848;
 }
